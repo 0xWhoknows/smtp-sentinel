@@ -1,5 +1,5 @@
 # app.py - Main FastAPI application for SMTP Sentinel
-# coded by WhoKnows | https://t.me/Moonlightcrow
+
 
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException
 from fastapi.responses import HTMLResponse, FileResponse
@@ -1739,4 +1739,5 @@ HTML_CONTENT = """<!DOCTYPE html>
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=5000)
