@@ -1,4 +1,3 @@
-# coded by WhoKnows | https://t.me/Moonlightcrow
 
 import asyncio
 import aiosmtplib
@@ -312,4 +311,5 @@ class SMTPTester:
         writer = csv.DictWriter(output, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(results)
+
         return output.getvalue()
